@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../history/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../assets/imgs/favicon-32x32.ico" />
+    <title>Mundo Servicios | Historial</title>
+  </head>
+  <body>
+    <div class="loader-wrapper">
+      <div class="loader"></div>
+    </div>
+    <nav class="navbar">
+      <div class="navbar-links">
+        <ul>
+          <li><a href="/history/">Historial</a></li>
+          <li><a href="/places/">Dónde estamos</a></li>
+          <li class="register-li">
+            <a href="/login/">Iniciar sesión</a>
+          </li>
+          <li class="register-li">
+            <a href="/register/">Registrarse</a>
+          </li>
+          <li class="exit-li">
+            <a href="">
+              <img src="../assets/imgs/cruz.webp" alt="exit" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="brand-logo">
+        <a href="/index.html">
+          <img src="../assets/imgs/mundoservicios-black.webp" alt="logo" />
+        </a>
+      </div>
+      <a href="#" class="toggle-button">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="/login/">Iniciar sesión</a></li>
+          <li><a href="/register/">Registrarse</a></li>
+          <div id="user-logger">
+            <ul>
+              <li></li>
+            </ul>
+          </div>
+          <div>
+            <a href="#"
+              ><img src="../assets/imgs/usuario.webp" alt="user-logo"
+            /></a>
+          </div>
+          <div class="log-out">
+            <a href="#"
+              ><img src="../assets/imgs/salir-alt.webp" alt="log-out"
+            /></a>
+          </div>
+        </ul>
+      </div>
+    </nav>
+    <div class="wrapper">
+      <div class="history-title">Historial de Solicitudes</div>
+      <div class="history-container">
+        <!-- <div class="card">
+          <span class="card-span" id="card-span">
+            <br />
+            <span style="font-size: 12px; color: #777777">hace un dia</span>
+          </span>
+          <div class="expand">
+            <div class="rotate-container">
+              <img
+                src="../assets/imgs/angulo-hacia-abajo.webp"
+                class="rotate-image"
+              />
+            </div>
+          </div>
+          <div class="history-info">
+            Estado:
+            <span style="color: #a79600"> En camino.</span><br />
+            Precio:
+            <span style="color: #777777"> 450$.</span><br />
+            Destino:
+            <span style="color: #777777">
+              CC Buenaventura,<br />Guatire, 1221 Miranda.</span
+            >
+            <br />
+            Conductor:
+            <span style="color: #777777"> Miguel Botello.</span>
+          </div>
+          <div class="basura">
+            <div class="bar"></div>
+            <img src="../assets/imgs/basura.webp" />
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <script type="module" src="./apiFetch.js"></script>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

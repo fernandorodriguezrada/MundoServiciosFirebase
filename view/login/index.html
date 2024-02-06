@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../login/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../assets/imgs/favicon-32x32.ico" />
+    <title>Mundo Servicios | Iniciar Sesión</title>
+  </head>
+  <body>
+    <div class="loader-wrapper">
+      <div class="loader"></div>
+    </div>
+    <nav class="navbar">
+      <div class="brand-logo">
+        <a href="/index.html">
+          <img src="../assets/imgs/mundoservicios-black.webp" alt="logo" />
+        </a>
+      </div>
+    </nav>
+    <div class="wrapper">
+      <div class="login-section">
+        <div class="login-title">Iniciar Sesión</div>
+        <div>
+          <form class="login-container" id="loginForm">
+            <input class="username" placeholder="Usuario" name="email" />
+            <input
+              class="password"
+              type="password"
+              placeholder="Contraseña"
+              name="password"
+            />
+            <div class="login-error" id="loginError"></div>
+            <span
+              class="toggle-password"
+              id="togglePassword"
+              style="cursor: pointer"
+              >Mostar Contraseña</span
+            >
+            <button class="acceder">Acceder</button>
+          </form>
+          <div class="forget" id="forgetPassword">
+            <a href="#">Olvidé mi contraseña</a>
+            <a href="/register/">Crear una cuenta</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="copyright">
+        Copyright © 2023 MundoServicios. <br />Todos los derechos reservados.
+      </div>
+    </div>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

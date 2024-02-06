@@ -1,0 +1,37 @@
+.footer {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background: #242424;
+  padding: 20px;
+  color: white;
+}
+
+.footer-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: -50%;
+  margin: 20px;
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+
+.footer-info {
+  display: flex;
+  color: #777777;
+  flex-direction: column;
+  line-height: 30px;
+}
+
+.copyright {
+  color: #777777;
+}
+
+@media (min-width: 1043px) {
+  .footer-contact {
+    display: flex;
+  }
+}

@@ -1,0 +1,84 @@
+@import "navbar.css";
+@import "cars-showcase.css";
+@import "features.css";
+@import "stars.css";
+@import "footer.css";
+@import "slideshow.css";
+@import "form.css";
+@import "loader.css";
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #9b9b9b;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #7b7b7b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: "Raleway", sans-serif;
+  background: rgb(245, 245, 245);
+  background: linear-gradient(
+    170deg,
+    rgba(245, 245, 245, 1) 0%,
+    rgba(172, 172, 172, 1) 64%
+  );
+}
+
+#scroll-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  visibility: hidden;
+  background-color: #242424;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.705);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out, visibility 0s linear 0.2s;
+}
+
+#scroll-to-top-btn:hover {
+  background-color: #3d3d3d;
+  border-radius: 50%;
+}
+
+#scroll-to-top-btn.show {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.2s ease-in-out, visibility 0s linear 0s;
+}
+
+#scroll-to-top-btn.hide {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out, visibility 0s linear 0.2s;
+}
+
+#scroll-to-top-btn img {
+  width: 30px;
+}
+
+.scroll-top {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}

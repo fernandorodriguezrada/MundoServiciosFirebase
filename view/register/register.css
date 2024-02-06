@@ -1,0 +1,177 @@
+.wrapper {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+  align-items: stretch;
+  height: auto;
+}
+
+.register-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.register-title {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: 30px;
+  color: #242424;
+  font-weight: bold;
+}
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.toggle-password {
+  display: flex;
+  justify-content: center;
+  line-height: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  text-decoration: underline;
+  color: #242424;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+input {
+  font-size: 16px;
+  background: white;
+  height: 30px;
+  width: 300px;
+  border-radius: 30px;
+  padding: 10px;
+  border: none;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.1);
+  border-width: 2px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.acceder {
+  background: #242424;
+  color: white;
+  height: 40px;
+  width: 320px;
+  border-radius: 30px;
+  outline-color: #36363685;
+  border: none;
+  border-width: 2px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+
+.acceder:hover {
+  background: rgb(53, 53, 53);
+  box-shadow: 0px 0px 10px #242424;
+  transform: scale(1.02);
+}
+
+.name::placeholder {
+  background-image: url("../assets/imgs/username.webp");
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: 10px;
+  padding-left: 40px;
+}
+
+.name:focus::placeholder {
+  color: transparent;
+  background-image: none;
+}
+.username::placeholder {
+  background-image: url("../assets/imgs/username.webp");
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: 10px;
+  padding-left: 40px;
+}
+
+.username:focus::placeholder {
+  color: transparent;
+  background-image: none;
+}
+
+.mail::placeholder {
+  background-image: url("../assets/imgs/sobre.webp");
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: 10px;
+  padding-left: 40px;
+}
+
+.mail:focus::placeholder {
+  color: transparent;
+  background-image: none;
+}
+.password::placeholder {
+  background-image: url("../assets/imgs/cerrar.webp");
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: 10px;
+  padding-left: 40px;
+}
+
+.password:focus::placeholder {
+  color: transparent;
+  background-image: none;
+}
+
+.already a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  text-decoration: underline;
+  color: #242424;
+}
+
+.footer {
+  display: flex;
+  position: absolute;
+  bottom: 10%;
+  left: -50%;
+  right: -50%;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+.copyright {
+  margin: 0;
+  text-align: center;
+}
+
+@media (max-width: 414px) {
+  .wrapper {
+    padding-top: 0;
+    margin-top: 0px;
+  }
+
+  .register-title {
+    font-size: 25px;
+  }
+  input {
+    font-size: 14px;
+    height: 30px;
+    width: 300px;
+  }
+}

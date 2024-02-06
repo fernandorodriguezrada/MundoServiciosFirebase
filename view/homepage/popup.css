@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box;
+}
+
+button {
+  border-radius: 40px;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  cursor: pointer;
+  background: rgb(36, 36, 36);
+  color: #ffffff;
+  height: 40px;
+  width: 130px;
+  margin: 0;
+  margin-right: 0px;
+  user-select: none;
+  transition: 0.3s ease-out;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+}
+
+button.open-modal {
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  margin-left: 30px;
+}
+
+.send-modal {
+  position: absolute;
+  top: 100%;
+  right: 58%;
+}
+
+.close-modal {
+  position: absolute;
+  top: 100%;
+  left: 58%;
+}
+
+button:hover {
+  background: rgb(53, 53, 53);
+  font-weight: bold;
+  transform: scale(1.02);
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+  font-family: "Staatliches";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal.open {
+  opacity: 1;
+  z-index: 999;
+  backdrop-filter: blur(20px);
+}
+
+.modal-inner {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 20px;
+  padding: 15px 25px;
+  text-align: center;
+  width: auto;
+  height: 500px;
+  background: rgb(245, 245, 245);
+  background: linear-gradient(
+    170deg,
+    rgba(245, 245, 245, 1) 0%,
+    rgba(172, 172, 172, 1) 64%
+  );
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  padding-bottom: 15px;
+  margin: 0;
+}
+
+.register-section {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.name::placeholder {
+  background-image: url("../assets/imgs/username.webp");
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: 10px;
+  padding-left: 40px;
+}
+
+.name:focus::placeholder {
+  color: transparent;
+  background-image: none;
+}
+.username::placeholder {
+  background-image: url("../assets/imgs/username.webp");
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: 10px;
+  padding-left: 40px;
+}
+
+.username:focus::placeholder {
+  color: transparent;
+  background-image: none;
+}
+
+.mail::placeholder {
+  background-image: url("../assets/imgs/sobre.webp");
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: 10px;
+  padding-left: 40px;
+}
+
+.mail:focus::placeholder {
+  color: transparent;
+  background-image: none;
+}
+.password::placeholder {
+  background-image: url("../assets/imgs/cerrar.webp");
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: 10px;
+  padding-left: 40px;
+}
+
+.password:focus::placeholder {
+  color: transparent;
+  background-image: none;
+}
+
+.already a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  text-decoration: underline;
+  color: #242424;
+}
+
+.copyright {
+  margin: 0;
+  text-align: center;
+}
+
+.description {
+  font-size: 16px;
+  background: white;
+  height: 100px;
+  align-items: center;
+  border-radius: 30px;
+  padding: 14px;
+  border: none;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.1);
+  border-width: 2px;
+  vertical-align: top;
+  font-family: "Montserrat", sans-serif;
+}
+
+.select {
+  color: rgb(105, 105, 105);
+  font-size: 16px;
+  background: white;
+  height: 40px;
+  border-radius: 30px;
+  padding: 10px;
+  border: none;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.1);
+  border-width: 2px;
+  vertical-align: top;
+  font-family: "Montserrat", sans-serif;
+}
+
+.price {
+  font-size: 22px;
+}
+@media (max-width: 1043px) {
+  .modal-inner {
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: normal;
+  }
+
+  .description {
+    font-size: 16px;
+    height: 80px;
+  }
+
+  h2 {
+    padding-bottom: 15px;
+    font-size: 24px;
+  }
+
+  .close-modal {
+    top: 98%;
+    left: 57%;
+  }
+  .send-modal {
+    top: 98%;
+    left: 11%;
+  }
+}

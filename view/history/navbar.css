@@ -1,0 +1,204 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #00000000;
+  border-width: thin;
+  color: rgb(0, 0, 0);
+  padding-top: 15px;
+}
+
+.brand-logo img {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0;
+  margin-left: 0px;
+  user-select: none;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  margin: 21px;
+}
+
+.navbar-links img {
+  width: 70px;
+  height: 70px;
+  margin-top: 5px;
+  margin-left: 18px;
+  background-color: transparent;
+  padding: 10px;
+  transition: all ease 0.2s;
+  border-radius: 60px;
+  user-select: none;
+  display: none;
+}
+
+.navbar-links img:hover {
+  background-color: #55555550;
+  border-radius: 60px;
+}
+
+.log-out img {
+  padding: 0;
+  border-radius: 18px;
+  width: 60px;
+  height: 60px;
+  padding: 13px;
+}
+
+.log-out img:hover {
+  background-color: rgba(83, 83, 83, 0.178);
+  border-radius: 18px;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+.navbar-links li {
+  list-style: none;
+  transition: all ease 0.2s;
+  border-radius: 30px;
+}
+.navbar-links li a {
+  text-decoration: none;
+  color: #242424;
+  padding: 1rem;
+  display: block;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.navbar-links li:hover {
+  background-color: #55555550;
+  border-radius: 30px;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 4px;
+  width: 100%;
+  background-color: #242424;
+  border-radius: 80px;
+}
+
+.register-li {
+  display: none;
+}
+
+.exit-li {
+  display: none;
+}
+@media (max-width: 1043px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  .brand-logo img {
+    content: url("../assets/imgs/logo-black.webp");
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    z-index: 1;
+    position: relative;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links li a {
+    padding: 0.5rem 1rem;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #242424;
+  }
+
+  .navbar-links.active {
+    left: 0;
+    position: absolute;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.226);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    transition: all ease 1s;
+  }
+
+  .brand-logo img {
+    margin: 0;
+    margin-top: 5px;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35px;
+    height: 35px;
+  }
+
+  .register-li {
+    display: flex;
+  }
+
+  .exit-li {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .exit-li img:hover {
+    background-color: transparent;
+    border-radius: 0;
+  }
+  .exit-li img {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+  }
+}

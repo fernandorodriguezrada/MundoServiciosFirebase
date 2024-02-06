@@ -1,0 +1,17 @@
+.brand-logo img {
+  display: flex;
+  height: 80px;
+  padding: 0;
+  margin: 0 auto;
+  user-select: none;
+  padding-top: 15px;
+}
+
+.brand-logo {
+  display: flex;
+  margin: 21px;
+  margin-bottom: 0px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}

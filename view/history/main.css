@@ -1,0 +1,37 @@
+@import "cards.css";
+@import "header.css";
+@import "loader.css";
+@import "navbar.css";
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #9b9b9b;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #7b7b7b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: "Raleway", sans-serif;
+  background: rgb(245, 245, 245);
+  background: linear-gradient(
+    170deg,
+    rgba(245, 245, 245, 1) 0%,
+    rgba(172, 172, 172, 1) 64%
+  );
+}

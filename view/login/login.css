@@ -1,0 +1,177 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  height: auto;
+}
+
+.login-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-title {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  justify-content: center;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  color: #242424;
+  font-weight: bold;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+input {
+  font-size: 16px;
+  background: white;
+  height: 30px;
+  width: 300px;
+  border-radius: 30px;
+  padding: 10px;
+  border: none;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.1);
+  border-width: 2px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.acceder {
+  margin-bottom: 30px;
+  background: #242424;
+  color: white;
+  height: 40px;
+  width: 320px;
+  border-radius: 30px;
+  outline-color: #36363685;
+  border: none;
+  border-width: 2px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+
+.acceder:hover {
+  background: rgb(53, 53, 53);
+  box-shadow: 0px 0px 10px #242424;
+  transform: scale(1.02);
+}
+
+.username::placeholder {
+  background-image: url("../assets/imgs/username.webp");
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: 10px;
+  padding-left: 40px;
+}
+
+.username:focus::placeholder {
+  color: transparent;
+  background-image: none;
+}
+
+.password::placeholder {
+  background-image: url("../assets/imgs/cerrar.webp");
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: 10px;
+  padding-left: 40px;
+}
+
+.password:focus::placeholder {
+  color: transparent;
+  background-image: none;
+}
+
+.forget a {
+  display: flex;
+  justify-content: center;
+  line-height: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  text-decoration: underline;
+  color: #242424;
+}
+
+.footer {
+  display: flex;
+  position: absolute;
+  bottom: 10%;
+  left: -50%;
+  right: -50%;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+.login-error {
+  display: flex;
+  justify-content: center;
+  line-height: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  color: #a32a2a;
+  font-weight: bold;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.toggle-password {
+  display: flex;
+  justify-content: center;
+  line-height: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  text-decoration: underline;
+  color: #242424;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.copyright {
+  margin: 0;
+  text-align: center;
+}
+
+@media (max-width: 414px) {
+  .wrapper {
+    padding-top: 0;
+    margin-top: 0px;
+  }
+
+  .login-title {
+    font-size: 25px;
+    margin-top: 70px;
+  }
+  input {
+    font-size: 14px;
+    height: 30px;
+    width: 300px;
+  }
+
+  .footer {
+    padding-top: 0;
+  }
+}

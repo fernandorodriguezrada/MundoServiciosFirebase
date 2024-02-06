@@ -1,0 +1,417 @@
+.map-title {
+  display: flex;
+  align-items: center;
+  padding: 50px 30px 0px 30px;
+  font-size: 50px;
+  font-family: "Staatliches";
+  color: rgb(36, 36, 36);
+  justify-content: center;
+}
+
+.text-and-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-now {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 200px 0px 0px;
+  border-radius: 40px;
+  border: none;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  cursor: pointer;
+  background: rgb(36, 36, 36);
+  color: #ffffff;
+  height: 40px;
+  width: 130px;
+  user-select: none;
+  transition: 0.3s ease-out;
+}
+.image-title img {
+  margin-right: 30px;
+  padding: 2px;
+  border-radius: 20px;
+  width: 150px;
+}
+
+.map-explanation {
+  display: flex;
+  padding: 30px 30px 0px 0px;
+  color: #242424;
+  font-family: "Montserrat", sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+.map-container {
+  display: flex;
+  justify-content: center;
+}
+
+.map {
+  position: relative;
+}
+.map img {
+  width: 375px;
+  user-select: none;
+}
+
+.contact-now:hover {
+  background: rgb(53, 53, 53);
+  font-weight: bold;
+  transform: scale(1.02);
+}
+
+.pointer-lara img {
+  position: absolute;
+  width: 30px;
+  padding: 5px;
+  border-radius: 30px;
+  background-color: #ff9c1c;
+  box-shadow: 0 0 5px 2px #ff9c1c;
+  right: 250px;
+  top: 75px;
+  cursor: pointer;
+  z-index: 0;
+  object-fit: contain;
+  animation: pulse 2s infinite;
+}
+
+.pointer-lara::before {
+  content: "Lara";
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  top: 30px;
+  left: 110px;
+  transform: translateX(-50%);
+  background-color: #242424;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.pointer-lara:hover::before {
+  opacity: 1;
+}
+
+.pointer-miranda img {
+  position: absolute;
+  width: 30px;
+  padding: 5px;
+  border-radius: 30px;
+  background-color: #ff9c1c;
+  box-shadow: 0 0 5px 2px #ff9c1c;
+  right: 170px;
+  top: 70px;
+  cursor: pointer;
+  z-index: 0;
+  object-fit: contain;
+  animation: pulse 2s infinite;
+}
+
+.pointer-miranda::before {
+  content: "Miranda";
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  top: 25px;
+  left: 190px;
+  transform: translateX(-50%);
+  background-color: #242424;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.pointer-miranda:hover::before {
+  opacity: 1;
+}
+
+.pointer-zulia img {
+  position: absolute;
+  width: 30px;
+  padding: 5px;
+  border-radius: 30px;
+  background-color: #ff9c1c;
+  box-shadow: 0 0 5px 2px #ff9c1c;
+  right: 310px;
+  top: 90px;
+  cursor: pointer;
+  z-index: 0;
+  object-fit: contain;
+  animation: pulse 2s infinite;
+}
+
+.pointer-zulia::before {
+  content: "Zulia";
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  top: 45px;
+  left: 50px;
+  transform: translateX(-50%);
+  background-color: #242424;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.pointer-zulia:hover::before {
+  opacity: 1;
+}
+
+.pointer-carabobo img {
+  position: absolute;
+  width: 30px;
+  padding: 5px;
+  border-radius: 30px;
+  background-color: #ff9c1c;
+  box-shadow: 0 0 5px 2px #ff9c1c;
+  right: 210px;
+  top: 80px;
+  cursor: pointer;
+  z-index: 0;
+  object-fit: contain;
+  animation: pulse 2s infinite;
+}
+
+.pointer-carabobo::before {
+  content: "Carabobo";
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  top: 35px;
+  left: 150px;
+  transform: translateX(-50%);
+  background-color: #242424;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.pointer-carabobo:hover::before {
+  opacity: 1;
+}
+
+.pointer-monagas img {
+  position: absolute;
+  width: 30px;
+  padding: 5px;
+  border-radius: 30px;
+  background-color: #ff9c1c;
+  box-shadow: 0 0 5px 2px #ff9c1c;
+  right: 90px;
+  top: 100px;
+  cursor: pointer;
+  z-index: 0;
+  object-fit: contain;
+  animation: pulse 2s infinite;
+}
+
+.pointer-monagas::before {
+  content: "Monagas";
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  top: 53px;
+  left: 270px;
+  transform: translateX(-50%);
+  background-color: #242424;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.pointer-monagas:hover::before {
+  opacity: 1;
+}
+
+.info {
+  color: #242424;
+  padding: 0px 30px 0px 30px;
+  font-size: 30px;
+  font-family: "Staatliches";
+}
+.bar {
+  margin: 30px;
+  margin-bottom: 0;
+  height: 1px;
+  width: 90%;
+  background-color: #777777;
+  border-radius: 10px;
+}
+
+.line {
+  margin: 0;
+  line-height: 30px;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 5px 2px #ff9d1cda;
+  }
+  50% {
+    box-shadow: 0 0 12px 5px #ff9d1c;
+  }
+  100% {
+    box-shadow: 0 0 5px 2px #ff9d1c8c;
+  }
+}
+
+@media (min-width: 1043px) {
+  .map-title {
+    justify-content: flex-start;
+    padding-left: 80px;
+    font-size: 60px;
+  }
+
+  .map-title {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 50px;
+    font-family: "Staatliches";
+    color: rgb(36, 36, 36);
+  }
+
+  .text-and-image {
+    display: flex;
+    align-items: center;
+  }
+
+  .contact-now {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 40px;
+    border: none;
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+    background: rgb(36, 36, 36);
+    color: #ffffff;
+    height: 40px;
+    width: 130px;
+    user-select: none;
+    transition: 0.3s ease-out;
+  }
+
+  .map-explanation {
+    display: flex;
+    padding-left: 80px;
+    font-size: 20px;
+    justify-content: flex-start;
+    margin-right: 330px;
+    margin-bottom: 80px;
+  }
+
+  .image-title img {
+    display: none;
+  }
+
+  .map-container {
+    position: absolute;
+    top: 100px;
+    right: 45px;
+  }
+
+  .map-image img {
+    height: auto;
+    width: 550px;
+  }
+  .info {
+    padding: 0px 80px 0px 80px;
+  }
+
+  .bar {
+    width: auto;
+  }
+
+  .pointer-lara img {
+    width: 40px;
+    padding: 7px;
+    right: 366px;
+    top: 125px;
+  }
+
+  .pointer-lara::before {
+    font-size: 20px;
+    top: 65px;
+    left: 163px;
+  }
+
+  .pointer-miranda img {
+    width: 40px;
+    padding: 7px;
+    right: 250px;
+    top: 120px;
+  }
+
+  .pointer-miranda::before {
+    font-size: 20px;
+    top: 60px;
+    left: 278px;
+  }
+
+  .pointer-zulia img {
+    width: 40px;
+    padding: 7px;
+    right: 455px;
+    top: 140px;
+  }
+
+  .pointer-zulia::before {
+    font-size: 20px;
+    top: 80px;
+    left: 74px;
+  }
+
+  .pointer-carabobo img {
+    width: 40px;
+    padding: 7px;
+    right: 310px;
+    top: 130px;
+  }
+
+  .pointer-carabobo::before {
+    font-size: 20px;
+    top: 70px;
+    left: 217px;
+  }
+
+  .pointer-monagas img {
+    width: 40px;
+    padding: 7px;
+    right: 140px;
+    top: 150px;
+  }
+
+  .pointer-monagas::before {
+    font-size: 20px;
+    top: 90px;
+    left: 388px;
+  }
+}
+@media (min-width: 1185px) {
+  .map-container {
+    position: absolute;
+    right: 200px;
+  }
+}
+@media (max-width: 1043px) {
+  .map-title {
+    flex-direction: column;
+  }
+}
